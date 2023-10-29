@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html >
+   <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="stylesheet" href="src/index.css" />
+       <script src="https://cdn.tailwindcss.com"></script>
+
+       
+
+   </head>
+
+   <body class="antialiased dark:bg-gray-900 bg-gradient-to-r from-indigo-500 from-20% via-sky-500 via-50% to-emerald-500 to-90% ">
+    <nav class="sticky top-0 z-40 w-full bg-white/50  p-2 lg:p-0">
+			<div class="max-w-6xl mx-auto ">
+				<div class="flex justify-between mx-4">
+					<div class="relative flex items-center">
+						<div id="name" class="font-normal lg:font-bold lg:text-xl text-lg ">
+                <h1>Zeinab Shahri</h1>
+            </div>
+					</div>	
+						<!-- Primary Navbar items -->
+          
+					<div class="relative items-center ml-auto hidden md:flex gap-x-6 px-2 ">
+							<a href="index.html" id="home" class="py-4 px-2 text-gray-800 hover:border-b-4 hover:border-purple-600 hover:text-purple-600 font-semibold ">Home</a>
+							<a href="project.html" id="projects" class="py-4 px-2 text-gray-800 font-semibold hover:border-b-4 hover:border-purple-600 hover:text-purple-600 transition duration-300">Projects</a>
+							<a href="AboutUs.html" id="aboutUs" class="py-4 px-2 text-gray-800 font-semibold hover:border-b-4 hover:border-purple-600 hover:text-purple-600 transition duration-300">About Me</a> 
+          </div>
+					
+					
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-800 hover:text-purple-600 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="">
+					<li class="active"><a href="index.html" id="home" class="block text-sm px-2 py-4 text-white bg-purple-600 font-semibold">Home</a></li>
+					<li><a href="project.html" id="projects" class="block text-sm px-2 py-4 hover:bg-purple-600 hover:text-white transition duration-300">Projects</a></li>
+					<li><a href="AboutUs.html" id="aboutUs" class="block text-sm px-2 py-4 hover:bg-purple-600 hover:text-white transition duration-300">About Me</a></li>
+				</ul>
+			</div>
+			
+		</nav>
+		
+    <div class="max-w-full mx-auto  flex items-center justify-center ">
+      <div class="max-w-6xl bg-white my-8 mx-4 rounded-lg ">
+        <div class="lg:flex">
+          <div class=" m-4  p-4 lg:h-[600px] max-h-[672px]">
+            
+            <div
+            class="flex  w-full lg:w-[480px] lg:h-full rounded-lg bg-white bg-cover bg-center p-8 items-center shadow-lg dark:bg-neutral-700"
+            style="background-image: url('./photo/learn-to-code.jpg');">
+            <div class=" bg-white/70  p-4 w-full  rounded-full lg:text-xl text-gray-600 font-bold border-4 border-gray-600 flex justify-between">
+              <h1>Front End Developer</h1>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <title>search</title>
+                <path d="M16.041 15.856c-0.034 0.026-0.067 0.055-0.099 0.087s-0.060 0.064-0.087 0.099c-1.258 1.213-2.969 1.958-4.855 1.958-1.933 0-3.682-0.782-4.95-2.050s-2.050-3.017-2.050-4.95 0.782-3.682 2.050-4.95 3.017-2.050 4.95-2.050 3.682 0.782 4.95 2.050 2.050 3.017 2.050 4.95c0 1.886-0.745 3.597-1.959 4.856zM21.707 20.293l-3.675-3.675c1.231-1.54 1.968-3.493 1.968-5.618 0-2.485-1.008-4.736-2.636-6.364s-3.879-2.636-6.364-2.636-4.736 1.008-6.364 2.636-2.636 3.879-2.636 6.364 1.008 4.736 2.636 6.364 3.879 2.636 6.364 2.636c2.125 0 4.078-0.737 5.618-1.968l3.675 3.675c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
+                </svg>
+            </div>
+          </div>
+          </div>
+          <div id="text" class="m-4 px-4 lg:py-8 ">
+            <p class="break-words max-w-3xl tracking-normal leading-relaxed ">
+               <b class="line-clamp-3">beginner front end developer</b></br>
+               I have skills in 3 programming languages: css, html, and javascript . </br>  
+               According to the experiences I have had in the past years in the field of drawing and painting, I am interested in the integration of art and programming.</br>
+               I am active, creative, able to work in a group and solve problems and interested in progress in the field of technology .</br>
+               I have professional ethics. I am very responsible and committed .</br>
+               I am skilled in debugging and responsive design and I have strengthened my programming by using Tailwind and Bootstrap frameworks .</br>
+               I am looking for a dynamic work environment so that I can challenge my abilities, learn new development methods and grow and progress in my career .
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>    
+        <footer class="bottom-0 w-full h-9 fixed z-10 bg-white/30 ">
+          <div class="flex flex-row gap-4 py-2 justify-center align-middle">
+            <a href="#" class="text-gray-900 hover:text-white dark:hover:text-gray-900">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 24 24">
+               <path
+                d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+                fill-rule="evenodd"
+                clip-rule="evenodd" />
+              </svg>
+                    </a>
+                    <a href="#" class="text-gray-900 hover:text-white dark:hover:text-gray-900">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="currentColor"
+              viewBox="0 0 24 24">
+              <path
+                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+            </svg>
+                  </a>
+                  <a href="#" class="text-gray-900 hover:text-white dark:hover:text-gray-900">
+                    <svg
+              class="h-4 w-4"
+              fill="currentColor"
+              viewbox="0 0 24 24"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xml:space="preserve"
+              xmlns:serif="http://www.serif.com/"
+              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+              <path
+                id="telegram-1"
+                d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z" />
+            </svg>
+                </a>
+          </div>
+        </footer>
+      </div>
+      <script src="index.js"></script>
+      <script src="mode.js"></script>
+   </body>
+
+</html>

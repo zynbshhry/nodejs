@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styleOfGame.css" type="text/css"/>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="game--title">Tic Tac Toe</h1>
+      <div>
+        <div class="score">
+          <div class="player">
+            <h3 id="symbol1">O</h3>
+            <h3 id="current-score1"></h3>
+          </div>
+          <div class="player">
+            <h3 id="symbol2">X</h3>
+            <h3 id="current-score2"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="game--container">
+        <div data-cell-index="0" class="cell"></div>
+        <div data-cell-index="1" class="cell"></div>
+        <div data-cell-index="2" class="cell"></div>
+        <div data-cell-index="3" class="cell"></div>
+        <div data-cell-index="4" class="cell"></div>
+        <div data-cell-index="5" class="cell"></div>
+        <div data-cell-index="6" class="cell"></div>
+        <div data-cell-index="7" class="cell"></div>
+        <div data-cell-index="8" class="cell"></div>
+      </div>
+      <h2 class="game--status"></h2>
+
+      
+      <div class="buttons">
+        <div id="game--restart" class="button">Restart Game</div>
+        <div id="new--game" class="button">New Game</div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form class="modal--body">
+            <label for="player1">player 1</label>
+            <input id="player1" required></br>
+            <label for="player2">player 2</label>
+            <input id="player2" required>
+          
+            <div class="modal--footer">
+              <button type="submit" class="close" value="close">close</button>
+              <button type="submit" class="confirm" value="submit">submit</button>
+            </div>
+          </form>
+        </div>
+      
+      </div>
+      
+    </section>
+
+    <script src="script.js"  ></script>
+  </body>
+</html>

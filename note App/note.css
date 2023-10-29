@@ -1,0 +1,63 @@
+textarea#subjectNote ,textarea#subject{
+    height: 50vh;
+    width: 80vw;
+  }
+textarea#titleNote , textarea#title{
+    width: 60vw;
+}
+#footer , .icon{
+    cursor: pointer;
+}
+#noteItem{
+    height: 10rem;
+}
+#title ,#write{
+    font-size: medium;
+}
+#text ,#writer{
+    font-size: small;
+}
+ul {
+    list-style-type: none;
+  }
+a {
+    text-decoration: none;
+}
+@media only screen and (min-width: 600px) {
+    #noteItem {
+      height: 18rem;
+    }
+    #title ,#write{
+        font-size: x-large;
+    }
+    #text ,#writer{
+        font-size: medium;
+    }
+    #svg{
+        width: 90px;
+        height: 90px;
+    }
+  }
+
+#noteItem:hover #delete{
+    display: inline;
+}
+#noteItem:hover #favorite{
+    display: inline;
+}
+#delete , #favorite{
+    display: none;
+}
+.form-switch .form-check-input {
+    width: 2em !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='tomato'/%3e%3c/svg%3e") !important;
+}
+
+.form-switch .form-check-input:checked {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='gray'/%3e%3c/svg%3e") !important;
+}
+
+.form-check-input, .form-check-input:checked {
+background-color: white !important;
+border-color: white !important;
+}

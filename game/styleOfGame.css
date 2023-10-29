@@ -1,0 +1,169 @@
+html{
+  height: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom left,BlueViolet,rgb(237, 172, 233));
+  
+}
+
+section {
+  text-align: center;
+  color:white;
+}
+.game--title{
+  font-size: 50px;
+}
+.score{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.game--container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 330px;
+  margin: 50px auto;
+  gap:15px;
+}
+
+.cell {
+  font-family: 'Permanent Marker', cursive;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color :Crimson;
+  cursor: pointer;
+  border-radius: 10px;
+  line-height: 100px;
+  font-size: 60px;
+  background-color:antiquewhite;
+}
+.player{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  background-color:rgb(230, 36, 158);
+  min-width: 100px;
+  border-radius: 10px;
+  padding-inline: 10px;
+  margin-inline: 15px;
+  
+
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+.button{
+  background-color:mediumvioletred;
+  width: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: antiquewhite;
+  margin-inline: 10px;
+  cursor: pointer;
+  transition: width;
+}
+.button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgb(148, 13, 99);
+  width: 165px;
+  height: 20px;
+}
+.game--status{
+  font-size: 30px;
+}
+.modal{
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0,0,0,0.5);
+ 
+}
+.modal-content {
+  position: relative;
+  background-color: antiquewhite;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal--body > input{
+  padding: 10px;
+  color: rgb(148, 13, 99) ;
+  margin: 10px;
+  
+}
+.modal--body > label{
+  color:rgb(148, 13, 99)  ;
+  
+}
+.modal--body{
+  margin-block: 50px;
+}
+.modal-content > .close {
+  position: absolute;
+  right: 25px;
+  color:rgb(148, 13, 99)  ;
+  font-size: 30px;
+
+}
+.modal-content > .close:hover{
+  color: black;
+}
+.modal--footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: start;
+}
+.modal--footer > .close,.confirm{
+  padding: 10px;
+  color: antiquewhite;
+  width: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 0px;
+
+  
+}
+.modal--footer > .close{
+  background-color:darkgray;
+}
+.confirm{
+  background-color: rgb(230, 36, 158);
+}
+.modal--footer > .close:hover,
+.modal--footer > .close:focus{
+  cursor: pointer;
+  background-color: rgb(112, 106, 106);
+}
+.confirm:hover,
+.confirm:focus{
+  cursor: pointer;
+  background-color: rgb(179, 32, 125);
+}
